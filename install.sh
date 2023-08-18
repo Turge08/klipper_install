@@ -39,3 +39,8 @@ git clone https://github.com/Turge08/klipper_macros
 
 ## Can Bus
 sudo cp $KIAUH_SRCDIR/resources/can0 /etc/network/interfaces.d/can0
+
+sudo ip link set up can0 type can bitrate 1000000
+sudo systemctl restart klipper
+
+
