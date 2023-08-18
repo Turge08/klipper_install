@@ -13,6 +13,7 @@ start_klipper_setup
 moonraker_setup_dialog
 install_fluidd
 install_klipperscreen
+CROWSNEST_UNATTENDED="1"
 install_crowsnest
 setup_gcode_shell_command
 
