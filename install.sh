@@ -17,6 +17,9 @@ CROWSNEST_UNATTENDED="1"
 install_crowsnest
 setup_gcode_shell_command
 
+~/klippy-env/bin/pip install -v numpy
+
+
 ## Katapult
 cd ~
 git clone https://github.com/Arksine/katapult
