@@ -40,6 +40,11 @@ cd ~/klipper_print_setting
 cd ~
 git clone https://github.com/Turge08/klipper_macros
 
+## Klipper TMC Autotune
+cd ~
+git clone https://github.com/andrewmcgr/klipper_tmc_autotune
+./install.sh
+
 ## Can Bus
 sudo cp $KIAUH_SRCDIR/resources/can0 /etc/network/interfaces.d/can0
 
