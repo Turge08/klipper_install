@@ -48,6 +48,9 @@ git clone https://github.com/andrewmcgr/klipper_tmc_autotune
 ## Can Bus
 sudo cp $KIAUH_SRCDIR/resources/can0 /etc/network/interfaces.d/can0
 
+## Nunpy
+sudo apt install python3-numpy python3-matplotlib libatlas-base-dev
+
 sudo ip link set up can0 type can bitrate 1000000
 pip3 install pyserial
 sudo systemctl restart klipper
