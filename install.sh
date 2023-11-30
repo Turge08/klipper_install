@@ -13,10 +13,10 @@ start_klipper_setup
 moonraker_setup_dialog
 install_fluidd
 install_klipperscreen
-CROWSNEST_UNATTENDED="1"
-install_crowsnest
 setup_gcode_shell_command
 
+## Nunpy
+sudo apt install python3-numpy python3-matplotlib libatlas-base-dev
 ~/klippy-env/bin/pip install -v numpy
 
 
@@ -48,11 +48,11 @@ git clone https://github.com/andrewmcgr/klipper_tmc_autotune
 ## Can Bus
 sudo cp $KIAUH_SRCDIR/resources/can0 /etc/network/interfaces.d/can0
 
-## Nunpy
-sudo apt install python3-numpy python3-matplotlib libatlas-base-dev
 
 sudo ip link set up can0 type can bitrate 1000000
 pip3 install pyserial
 sudo systemctl restart klipper
 
+CROWSNEST_UNATTENDED="1"
+install_crowsnest
 
