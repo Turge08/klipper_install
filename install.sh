@@ -43,13 +43,14 @@ git clone https://github.com/Turge08/klipper_macros
 ## Klipper TMC Autotune
 cd ~
 git clone https://github.com/andrewmcgr/klipper_tmc_autotune
+cd ~/klipper_tmc_autotune
 ./install.sh
 
 ## Can Bus
 sudo cp $KIAUH_SRCDIR/resources/can0 /etc/network/interfaces.d/can0
 
 
-sudo ip link set up can0 type can bitrate 1000000
+sudo ip link set up can0 type can bitrate 1000000 2>/dev/null
 pip3 install pyserial
 sudo systemctl restart klipper
 
