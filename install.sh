@@ -16,7 +16,7 @@ install_klipperscreen
 setup_gcode_shell_command
 
 ## Nunpy
-sudo apt install python3-numpy python3-matplotlib libatlas-base-dev
+sudo apt install python3-numpy python3-matplotlib libatlas-base-dev -y
 ~/klippy-env/bin/pip install -v numpy
 
 
