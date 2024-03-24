@@ -49,13 +49,16 @@ git clone https://github.com/andrewmcgr/klipper_tmc_autotune
 cd ~/klipper_tmc_autotune
 ./install.sh
 
+## Klipper CAN Update
+cd ~ git clone https://github.com/Turge08/klipper_can_update
+
 ## Can Bus
 sudo cp $KIAUH_SRCDIR/resources/can0 /etc/network/interfaces.d/can0
 
 
 sudo ip link set up can0 type can bitrate 1000000 2>/dev/null
 sudo mv /usr/lib/python3.11/EXTERNALLY-MANAGED /usr/lib/python3.11/EXTERNALLY-MANAGED.old
-pip3 install pyserial
+#pip3 install pyserial
 sudo apt-get install python3-serial
 sudo systemctl restart klipper
 
