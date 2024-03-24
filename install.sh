@@ -19,6 +19,9 @@ setup_gcode_shell_command
 sudo apt install python3-numpy python3-matplotlib libatlas-base-dev -y
 ~/klippy-env/bin/pip install -v numpy
 
+## Kiauh
+cd ~
+git clone https://github.com/dw-0/kiauh
 
 ## Katapult
 cd ~
