@@ -58,8 +58,9 @@ sudo cp $KIAUH_SRCDIR/resources/can0 /etc/network/interfaces.d/can0
 
 sudo ip link set up can0 type can bitrate 1000000 2>/dev/null
 sudo mv /usr/lib/python3.11/EXTERNALLY-MANAGED /usr/lib/python3.11/EXTERNALLY-MANAGED.old
-#pip3 install pyserial
 sudo apt-get install python3-serial
+sudo apt install python3-pip
+pip3 install pyserial
 sudo systemctl restart klipper
 
 CROWSNEST_UNATTENDED="1"
