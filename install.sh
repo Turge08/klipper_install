@@ -50,7 +50,8 @@ cd ~/klipper_tmc_autotune
 ./install.sh
 
 ## Klipper CAN Update
-cd ~ git clone https://github.com/Turge08/klipper_can_update
+cd ~
+git clone https://github.com/Turge08/klipper_can_update
 
 ## Can Bus
 sudo cp $KIAUH_SRCDIR/resources/can0 /etc/network/interfaces.d/can0
